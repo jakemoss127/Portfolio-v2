@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  filter: contrast(140%) brightness(100%);
+  background: linear-gradient(48deg, rgba(96,201,251,0.75), rgba(255,68,68,0.75)), 
+  radial-gradient( 
+    at var(--mouse-x) var(--mouse-y),
+    rgba(255,255,255,0.5), 
+    rgba(0,0,0,0.5)
+  ), 
+  url(./assets/noise.svg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.content-container {
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+  position: absolute;
+  padding: 2%;
+  color: white; 
+  font-family: 'Work Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
 }
 
-.App-link {
-  color: #61dafb;
+.description {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 50px; 
+  font-size: 32px;
+  font-family: 'Work Sans', sans-serif;
+  color: rgba(255,255,255,0.8);
+  letter-spacing: 1px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name-title{
+  font-weight: 550;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 225, 0.9);
+}
+
+.passion-title {
+  font-weight: 550;
+  text-decoration: none;
+  font-style: italic;
+  color: rgba(255, 255, 225, 0.9);
+}
+
+.git-logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  margin: 50px; 
+  cursor: pointer;
 }
