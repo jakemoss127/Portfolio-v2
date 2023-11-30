@@ -8,7 +8,7 @@
   height: 100vh;
   width: 100vw;
   filter: contrast(140%) brightness(100%);
-  background: linear-gradient(48deg, rgba(96,201,251,0.75), rgba(255,68,68,0.75)), 
+  background: linear-gradient(48deg, rgba(49, 26, 46, 0.75), rgba(165, 68, 255, 0.75), rgba(71, 48, 92, 0.75)), 
   radial-gradient( 
     at var(--mouse-x) var(--mouse-y),
     rgba(255,255,255,0.5), 
@@ -56,12 +56,60 @@
   color: rgba(255, 255, 225, 0.9);
 }
 
-.git-logo {
+.git-logo, .linkedin-logo{
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   bottom: 0;
-  left: 0;
-  margin: 50px; 
   cursor: pointer;
+}
+
+.git-logo {
+  margin: 50px;
+}
+
+.linkedin-logo {
+  margin-bottom: 50px;
+  margin-left: 125px;
+}
+
+.navbar {
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 50px; 
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 40px;
+  text-decoration: none;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.navbar li::after{
+  content: "";
+  display: block;
+  margin: left;
+  background-color: white;
+  height: 2px;
+  width: 0;
+  left: 0; 
+  bottom: 0;
+}
+
+.navbar li:hover:after {
+  width: 100%;
+  transition: 0.5s; 
+}
+
+.navbar-container {
+  width: 100vw;
 }

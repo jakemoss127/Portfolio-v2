@@ -1,7 +1,8 @@
 import './App.css';
 import { useEffect, useRef } from 'react';
-import githubLogo from './assets/github-logo.png'
-
+import githubLogo from './assets/github-logo.png';
+import linkLogo from './assets/linkedin-logo.png';
+import Navbar from '../src/components/Navbar';
 function App() {
   const appRef = useRef(null);
   
@@ -31,17 +32,23 @@ function App() {
     window.open(myUrl, '_blank');
   }
 
+  const toLinkedIn = () => {
+    const myUrl = 'https://www.linkedin.com/in/jacob-moss-uf/'; 
+    window.open(myUrl, '_blank');
+  }
+
   return (
     <div className="app" id="app" ref={appRef}>
       <div className='content-container'>
-        <span className='title'>MOSS</span>
+        <Navbar />
         <p className='description'>
           HELLO YOU!<br />
           I'M <span className='name-title'>JACOB MOSS</span> AND THIS IS MY PORTFOLIO.<br />
-          YES, I CODE AND HAVE A <span className='passion-title'>PASSION</span> FOR CREATIVITY.<br/>
+          I CODE AND HAVE A <span className='passion-title'>PASSION</span> FOR WEB DEVELOPMENT.<br/>
           AND YES, I ALSO LOVE GRADIENTS.<br />
         </p>
         <img className='git-logo' src={githubLogo} alt='github-logo' onClick={toGithub}/>
+        <img className='linkedin-logo' src={linkLogo} alt='linkedin-logo' onClick={toLinkedIn}/>
       </div>
     </div>
   );
