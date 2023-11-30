@@ -1,44 +1,44 @@
 import React from 'react'
-import './styles/projectstyles.css'
+import './styles/skillstyles.css'
 import gsap from 'gsap'; 
 
 const Projects = () => {
 
   const projects = [
     {
-      title: "New York",
+      title: "React.js",
       color: "#F06318"
     },
     {
-      title: "San Francisco",
+      title: "HTML5, CSS, JS",
       color: "#DCF018"
     },
     {
-      title: "San Antonio",
+      title: "C++",
       color: "#18F0E8"
     },
     {
-      title: "Nashville",
+      title: "Microsoft SQL Server",
       color: "#8C0CF0"
     },
     {
-      title: "Houston",
+      title: "Figma",
       color: "#F0183C"
     },
     {
-      title: "New Orleans",
+      title: "UI/UX Design",
       color: "#F0BA18"
     },
     {
-      title: "Oklahoma City",
+      title: "",
       color: "#0C34F0"
     },
     {
-      title: "Detroit",
+      title: "GitHub",
       color: "#0CBCF0"
     },
     {
-      title: "Indianapolis",
+      title: "Java",
       color: "#91F018"
     }
   

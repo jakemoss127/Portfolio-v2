@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import HomeView from '../src/views/HomeView';
 import ContactView from '../src/views/ContactView';
 import SkillView from './views/SkillView';
@@ -21,7 +21,7 @@ function App() {
           <Route path='/resume' element={<ResumeView />}></Route>
         </Routes>
       </BrowserRouter>
-      </div>
+    </div>
   );
 }
 

@@ -1,32 +1,16 @@
-.project-wrapper {
-    height: 100%;
-    background-color: white;
-}
+* {
+    padding: 0;
+    margin: 0;
+  }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: black;
+.project-view  {
     height: 100vh;
-    background-color: white;
-    }
-
-main div{
-    width: 100%;
-    border-top: 2px solid black;
-    padding: 1vw;
-    padding-left: 3vw;
-    position: relative;
-    margin-bottom: -2.5vw;
-    background-color: white;
-}
-
-main div p {
-    margin: 0px;
-    font-size: 4vw;
-    font-family: 'Work Sans', sans-serif;
-    text-transform: uppercase;
-    pointer-events: none;
+    width: 100vw;
+    background: linear-gradient(48deg, rgba(28, 189, 210, 0.75), rgba(241, 81, 81, 0.75)), 
+    radial-gradient( 
+    at var(--mouse-x) var(--mouse-y),
+    rgba(255,255,255,0.5), 
+    rgba(0,0,0,0.5)
+  ), 
+  url(../../assets/noise.svg);
 }

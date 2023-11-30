@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,28 +36,27 @@ html {
 }
 
 .title {
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   padding: 2%;
   color: white; 
-  font-family: 'Work Sans', sans-serif;
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 800;
 }
 
 .description {
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 5vh; 
   font-size: 32px;
-  font-family: 'Work Sans', sans-serif;
-  color: rgba(255,255,255,0.8);
-  letter-spacing: 1px;
-
+  color: rgba(229, 213, 213, 0.8);
+  letter-spacing: 0.5px;
 }
 
 .name-title{
-  font-weight: 550;
+  font-weight: 700;
   letter-spacing: 2px;
   color: rgba(255, 255, 225, 0.9);
 }
@@ -63,6 +66,7 @@ html {
   text-decoration: none;
   font-style: italic;
   color: rgba(255, 255, 225, 0.9);
+  font-weight: 700;
 }
 
 .git-logo, .linkedin-logo{
@@ -130,7 +134,14 @@ html {
 }
 
 a {
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   color: white;
   font-style: normal;
+}
+
+.follow-cursor {
+  width: 100px;
+  position: absolute;
+  place-self: center;
 }

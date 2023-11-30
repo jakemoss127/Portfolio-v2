@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import githubLogo from '../assets/github-logo.png';
 import linkLogo from '../assets/linkedin-logo.png';
 import Navbar from '../components/Navbar';
+import '../App.css'
 
 const HomeView = () => {
     const appRef = useRef(null);
@@ -48,7 +49,7 @@ const HomeView = () => {
           </p>
           <img className='git-logo' src={githubLogo} alt='github-logo' onClick={toGithub}/>
           <img className='linkedin-logo' src={linkLogo} alt='linkedin-logo' onClick={toLinkedIn}/>
-        </div>
+          </div>
         </div>
     </div>
   )
