@@ -21,6 +21,7 @@ main div{
     position: relative;
     margin-bottom: -2.5vw;
     background-color: white;
+    cursor: pointer;
 }
 
 main div p {
@@ -29,4 +30,17 @@ main div p {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     pointer-events: none;
+}
+
+.my-skills {
+    padding: 2%;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    font-weight: 100;
+    transition: color 2s;
+}
+
+.my-skills:hover {
+    color: rgb(93, 50, 93);
 }
