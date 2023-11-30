@@ -1,68 +1,27 @@
 import React, { useEffect, useRef } from 'react';
-import githubLogo from './assets/github-logo.png';
-import linkLogo from './assets/linkedin-logo.png';
-import Navbar from '../src/components/Navbar';
-import Projects from '../src/components/Projects';
-import Resume from '../src/components/Resume';
+import HomeView from '../src/views/HomeView';
+import ContactView from '../src/views/ContactView';
+import SkillView from './views/SkillView';
+import ResumeView from './views/ResumeView';
+import ProjectView from './views/ProjectView';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
-  const appRef = useRef(null);
-
-  useEffect(() => {
-    const moveGradient = (event) => {
-      const windowWidth = window.innerWidth;
-      const windowHeight = window.innerHeight;
-
-      const mouseX = Math.round((event.pageX / windowWidth) * 100);
-      const mouseY = Math.round((event.pageY / windowHeight) * 100);
-
-      if (appRef.current) {
-        appRef.current.style.setProperty("--mouse-x", mouseX.toString() + "%");
-        appRef.current.style.setProperty("--mouse-y", mouseY.toString() + "%");
-      }
-    };
-
-    document.addEventListener("mousemove", moveGradient);
-    return function cleanup() {
-      document.removeEventListener("mousemove", moveGradient);
-    };
-  }, [appRef]);
-
-  const toGithub = () => {
-    const myUrl = 'https://github.com/jakemoss127';
-    window.open(myUrl, '_blank');
-  };
-
-  const toLinkedIn = () => {
-    const myUrl = 'https://www.linkedin.com/in/jacob-moss-uf/';
-    window.open(myUrl, '_blank');
-  };
-
   return (
-    <div className="app" id="app" ref={appRef}>
-      <div className='content-container'>
-        <Navbar />
-        <div className='content-wrapper' id='home'>
-          <p className='description'>
-            HELLO YOU!<br />
-            I'M <span className='name-title'>JACOB MOSS</span> AND THIS IS MY PORTFOLIO.<br />
-            I CODE AND HAVE A <span className='passion-title'>PASSION</span> FOR WEB DEVELOPMENT.<br/>
-            AND YES, I ALSO LOVE GRADIENTS.<br />
-          </p>
-          <img className='git-logo' src={githubLogo} alt='github-logo' onClick={toGithub}/>
-          <img className='linkedin-logo' src={linkLogo} alt='linkedin-logo' onClick={toLinkedIn}/>
-        </div>
-        <section className='content-wrapper' id='projects'>
-          <Projects />
-        </section>
-        <section className='content-wrapper' id='resume'>
-          <Resume />
-        </section>
-        <section className='content-wrapper' id='contact'>
-          <h1>Contact Me</h1>
-        </section>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<HomeView />}></Route>
+          <Route path='/home' element={<HomeView />}></Route>
+          <Route path='/projects' element={<ProjectView />}></Route>
+          <Route path='/skills' element={<SkillView />}></Route>
+          <Route path='/contact' element={<ContactView />}></Route>
+          <Route path='/resume' element={<ResumeView />}></Route>
+        </Routes>
+      </BrowserRouter>
       </div>
-    </div>
   );
 }
 
