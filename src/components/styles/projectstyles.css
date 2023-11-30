@@ -1,4 +1,32 @@
 .project-wrapper {
-    background-color: red;
+    height: 100%;
+    background-color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
     height: 100vh;
+    background-color: white;
+    }
+
+main div{
+    width: 100%;
+    border-top: 2px solid black;
+    padding: 1vw;
+    padding-left: 3vw;
+    position: relative;
+    margin-bottom: -2.5vw;
+    background-color: white;
+}
+
+main div p {
+    margin: 0px;
+    font-size: 4vw;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    pointer-events: none;
 }

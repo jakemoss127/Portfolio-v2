@@ -52,15 +52,15 @@ function App() {
           <img className='git-logo' src={githubLogo} alt='github-logo' onClick={toGithub}/>
           <img className='linkedin-logo' src={linkLogo} alt='linkedin-logo' onClick={toLinkedIn}/>
         </div>
-        <div className='content-wrapper' id='projects'>
+        <section className='content-wrapper' id='projects'>
           <Projects />
-        </div>
-        <div className='content-wrapper' id='resume'>
+        </section>
+        <section className='content-wrapper' id='resume'>
           <Resume />
-        </div>
-        <div className='content-wrapper' id='contact'>
+        </section>
+        <section className='content-wrapper' id='contact'>
           <h1>Contact Me</h1>
-        </div>
+        </section>
       </div>
     </div>
   );
