@@ -1,15 +1,27 @@
 import React from 'react'
 import '../App.css'
+import {Link} from 'react-scroll'
+
 const Navbar = () => {
   return (
     <div className='nav-container'>
         <span className='title'>MOSS</span>
-        <ul className='navbar'>
-            <li>Home</li>
-            <li>Contact Me</li>
-            <li>Projects</li>
-            <li>Resume</li>
-        </ul>
+        <nav>
+            <ul className='navbar'>
+                <li>
+                    <a href='#home'>Home</a>
+                </li>
+                <li>
+                    <a href='#projects'>Projects</a>
+                </li>
+                <li>
+                    <a href='#resume'>Resume</a>
+                </li>
+                <li>
+                    <a href='#contact'>Contact Me</a>
+                </li>
+            </ul>
+        </nav>
     </div>
   )
 }
