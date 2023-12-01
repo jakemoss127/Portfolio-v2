@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: black;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.card {
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 40vw;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.submit-button {
+    border-radius: 5px;
+    background-color: white;
+    margin: 1em;
+    padding: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.4s;
+    border: 1px black solid;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 2em;
+    width: 30vw;
+    height: 10vh;
+    overflow: hidden;
+    text-align: center;
+    resize: none;
+    line-height: 1em;
+}
+
+.form-label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    margin: 0.5em;
+    font-weight: bold;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: linear-gradient(to right, #ff105f, #ffad06);
+}
+
+.name-email {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 1em;
+    font-family: 'Montserrat', sans-serif;
+}

@@ -1,4 +1,40 @@
 .resume-wrapper {
-    background-color: blue;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    background-color: white;
+    margin-top: 4vh;
+    width: 14vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: 1px solid black; 
+    transition: .4s;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+button:hover a {
+    color: white;
+}
+
+.button-and-title{
+    margin-top: 45vh;
+}
+
+h1 {
+    font-size: 1.4em;
+}
+
+a {
+    color: black;
 }

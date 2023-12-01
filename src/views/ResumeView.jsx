@@ -1,8 +1,14 @@
 import React from 'react'
+import Resume
+ from '../components/Resume'
+import Navbar from '../components/Navbar';
 
 const ResumeView = () => {
   return (
-    <div>ResumeView</div>
+    <div>
+      <Navbar textColor={'black'}/>
+      <Resume />
+    </div>
   )
 }
 
